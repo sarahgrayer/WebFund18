@@ -2,10 +2,17 @@
   background-color: #d5d2ae;
   width: 870px;
   height: 840px;
+
 }
 #header{
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+}
+#header img{
+  width: 75px;
   display: inline-block;
-  padding-left: 200px;
+  margin: 5px;
 }
 h1{
   display: inline-block;
@@ -13,14 +20,11 @@ h1{
   font-weight: bold;
   font-size: 34px;
 }
-#header img{
-  width: 100px;
-  display: inline-block;
-  margin: 5px;
+#main_content{
+  text-align: center;
 }
 .blue{
   display: inline-block;
-  padding-left: 0px;
 }
 .blue img{
   width: 128px;
@@ -37,6 +41,5 @@ h1{
   margin: 5px;
   padding:10px;
   border: 5px solid black;
-  align-items: center;
   background-color: pink;
 }
