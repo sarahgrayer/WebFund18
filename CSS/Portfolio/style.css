@@ -1,0 +1,105 @@
+.wrapper{
+  width: 970px;
+  height: 1160px;
+  background-color: #f8f8f8;
+}
+.header{
+  padding: 0px 20px;
+  height: 80px;
+}
+.left_header{
+  display: inline-block;
+  width: 180px;
+}
+.right_header{
+  display: inline-block;
+  text-align: right;
+  width: 726px;
+}
+.body{
+  background: radial-gradient(#1c0c0f, #6e5864);
+  width: 970px;
+  height: 1000px;
+  margin: 0px;
+  display: inline-block;
+}
+.body img{
+  width: 450px;
+  border: 5px solid #c0c0c0;
+  display: inline-block;
+  margin: 20px;
+}
+.body h3{
+  background: linear-gradient(#afaeb3, #8a8796, #afaeb3);
+  color: white;
+  margin: 0px;
+  padding: 7px 10px;
+}
+.body h4{
+  background: linear-gradient(#afaeb3, #8a8796, #afaeb3);
+  color: white;
+  margin: 0px;
+  padding: 7px 10px;
+}
+.top_right_body{
+  width: 440px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 20px 20px 0px;
+}
+.text{
+  background: linear-gradient(to bottom right, #fffeff, #daccd9);
+  padding: 15px;
+  display: inline-block;
+  height: 240px;
+}
+.descriptions{
+  display: inline-block;
+  vertical-align: top;
+  width: 292px;
+  height: 630px;
+  margin-left: 20px;
+  background: linear-gradient(to bottom right, #fffeff, #daccd9);
+}
+.descriptions img{
+  width: 292px;
+  display: inline-block;
+  margin: 0px;
+  border: none;
+}
+.icons{
+  margin: 10px;
+}
+.icons img{
+  width: 41px;
+  display: inline-block;
+  padding: 5px;
+}
+.descriptions p{
+  padding: 2px 12px;
+  width: 272px;
+  height: 175px;
+}
+button{
+  background: #407d61;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 3px 2px 5px gray;
+  display: block;
+  padding: 5px;
+  margin-top: 5px;
+  width: auto;
+  position: relative; /*button stays in doc flow, can give direction*/
+  left: 50%; /*moves button to left by 50%*/
+  transform: translateX(-50%); /*gets half element's width and subtracts value from left's value*/
+}
+.bottom-footer img{
+  width: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px;
+}
+.footer{
+  text-align: center;
+}
