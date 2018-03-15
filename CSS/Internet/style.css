@@ -1,0 +1,226 @@
+#wrapper{
+  width: 970px;
+  height: 1500px;
+  font-family: sans-serif;
+}
+body{
+  display: inline-block;
+}
+#wrapper #header img{
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  margin-bottom: -30px;
+}
+#header h1{
+  display: inline-block;
+  margin: 0px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+#header span{
+  color: #22659e;
+}
+h2{
+  background: linear-gradient (#2969a0, #5082ac, #2969a0);
+  color: white;
+  margin: 0px;
+  padding-left: 15px;
+  font-weight: lighter;
+  font-size: 32px;
+}
+#title_2{
+  background: linear-gradient(#2969a0, #5082ac, #2969a0);
+  padding: 15px 10px;
+}
+#nav{
+  display: inline-block;
+  width: 240px;
+  height: 600px;
+}
+#nav h4 span{
+  color: #db3330;
+}
+#nav p span{
+  color: #2a6aa3;
+  font-weight: bold;
+}
+#nav p{
+  font-weight: bold;
+}
+#top_button button{
+  width: 200px;
+  height: 35px;
+  background-color: #4580b2;
+  color: white;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 2px 2px gray;
+  padding: 3px 0px;
+  margin-bottom: 5px;
+}
+#bottom_button button{
+  width: 200px;
+  height: 35px;
+  background-color: #ed8f1b;
+  color: white;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 2px 2px gray;
+  padding: 3px 0px;
+}
+#pic{
+  width: 200px;
+  height: 300px;
+  background-image: url("ad_background.png");
+  margin: 50px 0px;
+}
+#pic p{
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  padding: 22px 15px 0px 15px;
+  font-size: 23px;
+  margin: 0px;
+}
+#pic img{
+  width: 80px;
+  height: auto;
+  position: relative; /*button stays in doc flow, can give direction*/
+  left: 50%; /*moves button to left by 50%*/
+  transform: translateX(-50%);
+  margin: 13px 0px;
+}
+#pic button{
+  width: 180px;
+  height: 35px;
+  background-color: #30c7df;
+  color: white;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 3px 0px;
+  position: relative; /*button stays in doc flow, can give direction*/
+  left: 50%; /*moves button to left by 50%*/
+  transform: translateX(-50%);
+}
+#dns{
+  display: inline-block;
+  width: 75px;
+  height: 50px;
+  vertical-align: top;
+}
+#dns img{
+  width: 20px;
+  height: auto;
+  display: inline-block;
+  margin: 10px 0px 0px 0px;
+}
+#dns p{
+  color: #3f7aaf;
+  font-weight: lighter;
+  display: inline-block;
+}
+#phone_contact{
+  margin-left: 400px;
+  margin-bottom: 15px;
+  vertical-align: top;
+  display: inline-block;
+}
+#phone{
+  display: inline-block;
+  vertical-align: top;
+}
+#phone img{
+  width: 40px;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 5px;
+}
+#contact{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+#contact p{
+  margin: 2px;
+  font-size: 12px;
+}
+#contact h3{
+  margin: 2px;
+  color: #00c1df;
+}
+.content{
+  display: inline-block;
+  width: 700px;
+  height: 515px;
+}
+.content h3{
+  display: inline-block;
+  width: 700px;
+  color: #2868a0;
+}
+h3{
+  color: #2868a0;
+  margin: 3px;
+  display: inline-block;
+}
+.content span{
+  color: #00c4e0;
+}
+.content p{
+  display: inline-block;
+  margin: 3px;
+}
+.content img{
+  width: 250px;
+  height: auto;
+  position: relative; /*button stays in doc flow, can give direction*/
+  left: 50%; /*moves button to left by 50%*/
+  transform: translateX(-50%);
+  margin: 15px;
+}
+#body{
+  display: inline-block;
+  position: relative;
+  width: 700px;
+  height: 600px;
+  margin-right: 0px;
+  vertical-align: top;
+}
+#bottom{
+  border-top: 5px solid #008ae2;
+  border-right: 5px solid #4883b4;
+  border-left: 5px solid #4883b4;
+  display: inline-block;
+  margin-top: 15px;
+  width: 700px;
+}
+#bottom_text{
+  display: inline-block;
+  vertical-align: top;
+  width: 520px;
+}
+#bottom img{
+  width: 115px;
+  height: auto;
+  display: inline-block;
+  margin: 15px;
+}
+#bottom_text p{
+  display: inline-block;
+  vertical-align: top;
+  width: 520px;
+  margin: 0px;
+  padding: 5px;
+}
+#bottom_text h3{
+  vertical-align: top;
+  margin: 15px 0px 5px 0px;
+}
+#bottom_text span{
+  color: #00c4e0;
+}
