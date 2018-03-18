@@ -1,0 +1,56 @@
+h1{
+  background-color: #b3b3b3;
+  padding: 15px;
+  margin: 10px;
+}
+#message{
+  background-color: #cccccc;
+  padding: 15px;
+  margin: 10px;
+}
+.size_description{
+  background-color: #ffff99;
+  padding: 15px;
+  margin: 10px;
+}
+span{
+  font-weight: bold;
+}
+.col{/*universally applied for all columns, regardless of screen size*/
+  vertical-align: top;
+  padding: 15px;
+  height: 20px;
+}
+@media only screen and (max-width:480px){
+  .sm-1{
+    width: 100%;
+  }
+  .med-1{
+    display: none;
+  }
+  .lrg-1{
+    display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+  .sm-1{
+    display: none;
+  }
+  .med-1{
+    width: 100%;
+  }
+  .lrg-1{
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px){
+  .sm-1{
+    display: none;
+  }
+  .med-1{
+    display: none;
+  }
+  .lrg-1{
+    width: 100%;
+  }
+}
