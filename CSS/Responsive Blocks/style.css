@@ -1,0 +1,109 @@
+.wrapper{
+  background-color: gray;
+  margin: 10px;
+  padding: 15px;
+}
+.header{
+  width: 98%;
+  height: 90px;
+  background-color: green;
+  display: inline-block;
+}
+.col{/*universally applied for all columns, regardless of screen size*/
+  vertical-align: top;
+  padding: 5px;
+}
+@media only screen and (max-width:480px){
+  .navigation{
+    display: none;
+  }
+  .main_content{
+    background-color: red;
+    width: 98%;
+    height: 470px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .subcontents{
+    width: 95%;
+    height: 21%;
+    display: inline-block;
+    background-color: yellow;
+    margin: 10px 20px 10px 10px;
+    padding: 0px;
+  }
+  .advertisement{
+    width: 90%;
+    height: 18%;
+    display: inline-block;
+    background-color: purple;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  @media only screen and (min-width:481px) {
+    .navigation{
+      display: none;
+    }
+    .main_content{
+      width: 98%;
+      height: 470px;
+      background-color: red;
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .subcontents{
+      width: 40%;
+      height: 21%;
+      display: inline-block;
+      background-color: yellow;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+    .advertisement{
+      width: 90%;
+      height: 18%;
+      display: inline-block;
+      background-color: purple;
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+@media only screen and (min-width: 1024px){
+  .header{
+    width: 98%;
+    height: 90px;
+    background-color: green;
+    display: inline-block;
+  }
+  .navigation{
+    width: 20%;
+    height: 180px;
+    background-color: blue;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 14px;
+  }
+  .main_content{
+    width: 75%;
+    height: 250px;
+    background-color: red;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .subcontents{
+    width: 30%;
+    height: 55%;
+    background-color: yellow;
+    display: inline-block;
+    margin: 12px 6px;
+  }
+  .advertisement{
+    width: 96%;
+    height: 20%;
+    display: inline-block;
+    background-color: purple;
+    margin: 4px 12px 12px 12px;
+  }
+}
