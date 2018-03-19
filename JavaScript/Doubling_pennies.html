@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doubling Pennies</title>
+    <script type="text/javascript">
+
+    /*calculate how much $ after 30 days*/
+    var amount = .01;
+    for (var day=1; day<31; day++){
+      console.log("On day " +day+ ", the servant has $"+amount);
+      amount = amount *2;
+    }
+
+    /*calculate how many days to have at a billion*/
+    var day = 1;
+    var amount = .01;
+    while (amount < 1000000000){
+      /*console.log ("On day " +day+ ", the servant has $"+amount);*/
+      day++;
+      amount = amount *2;
+    }
+    console.log ("It took " +day+ " days for the servant to have over a billion $");
+
+    </script>
+  </head>
+</html>
