@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>If you don't mind, can I have the time?</title>
+    <script type="text/javascript">
+      var HOUR = 1;
+      var MINUTE = 15;
+      var PERIOD = "AM"
+
+      var str = "It's ";
+
+      if(MINUTE>30){
+        str += "almost " + (HOUR + 1)
+      }
+      else if(MINUTE==30){
+        str += "half past " + (HOUR)
+      }
+      else if(MINUTE==15){
+        str += "quarter after " + (HOUR)
+      }
+      else if(MINUTE==5){
+        str += "five after " + (HOUR)
+      }
+      else if (MINUTE==0){
+        str += "twelve "
+      }
+      else{
+        str += "just after " + (HOUR)
+      }
+
+
+      if (HOUR == 12 && MINUTE == 0){
+        if (PERIOD == "PM"){
+          str += " noon."
+        }
+        else{
+          str += " midnight."
+        }
+      }
+      else if(PERIOD == "PM"){
+        if (HOUR >= 6){
+          str += " in the evening."
+        }
+        else{
+          str += " in the afternoon."
+        }
+      }
+      else{
+        str += " in the morning."
+      }
+
+      console.log(str)
+      </script>
+  </head>
+</html>
