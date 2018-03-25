@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Students & Teachers</title>
+    <script type="text/javascript">
+    var users={//dictionary users
+      'Students':[//object students is array of following key/value pairs
+        {first_name: "Sarah", last_name: "Grayer"},
+        {first_name: "Justin", last_name: "Grayer"},
+        {first_name: "Marc", last_name: "Grote"},
+        {first_name: "Rachel", last_name: "Berry"}
+      ],
+      'Instructors':[//object instructors
+        {first_name: "Michael", last_name: "Choi"},
+        {first_name: "Chloe", last_name: "Grayer"},
+        {first_name: "Martin", last_name: "Puryear"}
+      ]
+    }
+    function printnames(){
+      for (var group in users) {
+        console.log(group);
+      for (var i = 0; i < users[group].length; i++) {
+        var full_name = users[group][i].first_name + ' ' + users[group][i].last_name;
+        var length = (users[group][i].first_name.length+users[group][i].last_name.length);
+        console.log(i+1 +" - "+ full_name +" - "+ length);
+      }
+      }
+    }
+    printnames();
+    </script>
+  </head>
+</html>
