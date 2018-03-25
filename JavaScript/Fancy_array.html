@@ -7,9 +7,12 @@
     var arr_names = ["James", "Jill", "Jane", "Jack"]
     console.log(arr_names)
 
-    for (var num=0; num <= arr_names.length -1; num++){
-        console.log(num + "-> " + arr_names[num]);
-      }
+    function fancy_array(s){
+      for (var num=0; num <= arr_names.length -1; num++){
+        console.log(num + s + arr_names[num]);
+        }
+    }
+    fancy_array(" ~ ")
     </script>
   </head>
 </html>

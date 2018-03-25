@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Chance</title>
+    <script type="text/javascript">
+
+    function random_chance(quarters, leave){
+      while(quarters>0){
+        if (quarters>leave){
+          console.log("You left the game with " +quarters+" quarters -- great job!");
+          break
+        }
+        else{
+          if (Math.trunc(Math.random()*100) == 1){//1 out of 100 chance of winning, 1 = win
+            quarters=quarters+(Math.trunc(Math.random()*50+50));//would win between 50 & 100 quarters
+            console.log("YOU WON!!! You now have " +quarters+ " quarters!")//add winnings to quarter count
+          }
+          else{
+            quarters--;//decrement quarter count if lose
+            console.log(":( "+quarters+" quarters");
+          }
+        }
+      }
+      console.log ("game over, you lose.");
+    }
+    random_chance(50, 150)//set amount to begin with and amount you would like leave game with if reached
+    </script>
+  </head>
+</html>
