@@ -1,0 +1,39 @@
+.section{
+  border-bottom: 5px solid black;
+  margin: 10px;
+  width: 700px;
+  display: inline-block;
+}
+button{
+  display: inline-block;
+  vertical-align: center;
+  margin-left: 30px;
+  width: 100px;
+  padding: 5px 0px;
+}
+h1{
+  display: inline-block;
+  width: 500px;
+  padding-left: 0px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+h2{
+  display: inline-block;
+  text-align: center;
+  width: 500px;
+  margin-left: 130px;
+}
+p{
+  display: inline-block;
+  width: 500px;
+  margin-left: 130px;
+  text-align: center;
+}
+.red{
+  color: red;
+}
+img{
+  width: 100px;
+  height: auto;
+}

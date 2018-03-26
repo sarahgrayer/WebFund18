@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('img').hide();
+        $(".hidden").hide();
+        $("#addclass").click(function(){
+          $(this).siblings('p:eq(0)').addClass('red');//:eq() selector selects an element w/a specific index #, starts at 0.Can have it read simply ('p') to apply to all sibling <p>.
+        //class'red' defined below script in style section.
+        })
+        $('#Slidetoggle').click(function(){
+          $(this).siblings('img').slideToggle("");
+        })
+        $('#append').click(function(){
+          $(this).siblings('p:eq(0)').append(" This is the new text appended");
+        })
+        $('#hide').click(function(){
+          $(this).siblings('h1').hide();
+        })
+        $('#show').click(function(){
+          $('h1').show();//matched w/above "hide" above, applied to same element
+        })
+        $('#toggle').click(function(){
+          $(this).siblings('p').toggle();//appear & diseapper
+        })
+        $('#slidedown').click(function(){
+          $(this).siblings('p:eq(1)').slideDown();//message slides into view
+        })
+        $('#slideup').click(function(){
+          $(this).siblings('p:eq(1)').slideUp();//message slides away (up direction)
+        })
+        $('#fadein').click(function(){
+          $(this).siblings('p:eq(1)').fadeIn();//message fades in
+        })
+        $('#fadeout').click(function(){
+          $(this).siblings('p:eq(1)').fadeOut();//message fades away (no direction)
+        })
+        $('#before').click(function(){
+          $(this).siblings('p:eq(0)').before("<h2>Woah!</h2>");
+        })
+        $('#after').click(function(){
+          $(this).siblings('p:eq(0)').after("<h2>Woah!</h2>");
+        })
+        $('#html').click(function(){
+          $(this).siblings('p:eq(0)').html("I am the new HTML");
+        })
+
+      })
+    </script>
+  </head>
+  <body>
+    <div class='section'>
+      <button id ="addclass">Add Class</button>
+      <h1>Add Class</h1>
+      <p>Click the button to add class 'red' to this paragraph.</p>
+      <p>This p tag will not change because it is index 1, not 0 as selected.</p>
+    </div>
+    <div class='section'>
+      <button id ="Slidetoggle">Slidetoggle</button>
+      <h1>Slidetoggle</h1>
+      <p>Click the button to slidetoggle a hidden image.</p>
+      <img src="chloe.jpg" alt = "Chloe">
+    </div>
+    <div class='section'>
+      <button id ="append">Append</button>
+      <h1>Append</h1>
+      <p>Click the button to append a new paragraph.</p>
+    </div>
+    <div class='section'>
+      <button id ="hide">Hide</button>
+      <h1>Hide</h1>
+      <p>Click the button to hide this heading.</p>
+    </div>
+    <div class='section'>
+      <button id ="show">Show</button>
+      <h1>Show</h1>
+      <p>Click the button to show previously hidden heading.</p>
+    </div>
+    <div class='section'>
+      <button id ="toggle">Toggle</button>
+      <h1>Toggle</h1>
+      <p>Click the button to this p tag.</p>
+    </div>
+    <div class='section'>
+      <button id ="slidedown">Slide Down</button>
+      <h1>Slide Down</h1>
+      <p>Click the button to slide down a message.</p>
+      <p class='hidden'>Here I am!</p>
+    </div>
+    <div class='section'>
+      <button id ="slideup">Slide Up</button>
+      <h1>Slide Up</h1>
+      <p>Click the button to slide up the line below.</p>
+      <p>Bye now!</p>
+    </div>
+    <div class='section'>
+      <button id ="fadein">Fade In</button>
+      <h1>Fade In</h1>
+      <p>Click the button to fade in a hidden message.</p>
+      <p class='hidden'>Hello! I like to hide...</p>
+    </div>
+    <div class='section'>
+      <button id ="fadeout">Fade Out</button>
+      <h1>Fade Out</h1>
+      <p>Click the button to fade out the message below.</p>
+      <p>I'll leave as soon as you click the button.</p>
+    </div>
+    <div class='section'>
+      <button id ="before">Before</button>
+      <h1>Before</h1>
+      <p>Click the button to add an h2 before this p tag.</p>
+    </div>
+    <div class='section'>
+      <button id ="after">After</button>
+      <h1>After</h1>
+      <p>Click the button to add an h2 after this p tag.</p>
+    </div>
+    <div class='section'>
+      <button id ="html">HTML</button>
+      <h1>HTML</h1>
+      <p>Click the button to change the HTML of this p tag.</p>
+    </div>
+
+  </body>
+</html>
