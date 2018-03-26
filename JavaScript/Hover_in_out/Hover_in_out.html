@@ -8,9 +8,11 @@
       $(document).ready(function(){
         $('img').hover(
           function(){
-          $(this).attr('src', $(this).attr('data-alt-src'));//mouse enter
-          $(this).attr('data-alt-src', $(this).attr('alt'));//mouse leave
-        });
+            var temp=$(this).attr('src')//without temp variable, can only hover on/off once
+            $(this).attr('src', $(this).attr('data-alt-src'));//mouse enter
+            $(this).attr('data-alt-src', temp);//mouse leave, back to temp "src"
+          }
+        );
       })
       </script>
     </head>
