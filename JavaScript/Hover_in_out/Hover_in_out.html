@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hover In/Out</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('img').hover(
+          function(){
+          $(this).attr('src', $(this).attr('data-alt-src'));//mouse enter
+          $(this).attr('data-alt-src', $(this).attr('alt'));//mouse leave
+        });
+      })
+      </script>
+    </head>
+    <body>
+      <h2>Chloe's Ear Tilt & Close Up</h2>
+      <img src="chloe_ear_tilt.jpg" data-alt-src="chloe_close_up.jpg" alt="chloe_ear_tilt.jpg">
+      <img src="chloe_ear_tilt.jpg" data-alt-src="chloe_close_up.jpg" alt="chloe_ear_tilt.jpg">
+      <img src="chloe_ear_tilt.jpg" data-alt-src="chloe_close_up.jpg" alt="chloe_ear_tilt.jpg">
+      <img src="chloe_ear_tilt.jpg" data-alt-src="chloe_close_up.jpg" alt="chloe_ear_tilt.jpg">
+      <img src="chloe_ear_tilt.jpg" data-alt-src="chloe_close_up.jpg" alt="chloe_ear_tilt.jpg">
+      <img src="chloe_ear_tilt.jpg" data-alt-src="chloe_close_up.jpg" alt="chloe_ear_tilt.jpg">
+      <img src="chloe_ear_tilt.jpg" data-alt-src="chloe_close_up.jpg" alt="chloe_ear_tilt.jpg">
+      <img src="chloe_ear_tilt.jpg" data-alt-src="chloe_close_up.jpg" alt="chloe_ear_tilt.jpg">
+    </body>
+</html>
