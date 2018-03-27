@@ -1,0 +1,20 @@
+body{
+  width: 970px;
+}
+h2, h1, h3 {
+   text-align: center;
+}
+#large_box {
+   margin: 0px auto;
+   margin-top: 30px;
+   background-color: lightblue;
+   width: 960px;
+   height: 300px;
+}
+#large_box div {
+   background-color: blue;
+   display: inline-block;
+   width: 240px;
+   height: 160px;
+   margin: 70px 0px 70px 58px;
+}
