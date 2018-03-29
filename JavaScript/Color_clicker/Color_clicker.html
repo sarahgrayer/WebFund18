@@ -14,22 +14,19 @@
       }
       return color;
     }
-    $(document).ready(function(){//need to call random_color within each function below, otherwise it will only be called/color generated once at top
+    $(document).ready(function(){//need to call random_color within each function below, otherwise it will only be called if only defined here at top
       $('#large_box').click(function(){
-        var color = random_color();
-        $(this).css("background-color", color);
-        var color2 = random_color();
-        $(this).children('.side_box, .middle_box').css("background-color", color2);
+        $(this).css("background-color", random_color());
+        $(this).children('.side_box, .middle_box').css("background-color", random_color());
       })
       $('.side_box').click(function(event){
         event.stopPropagation();
-        var color = random_color();
-        $(this).siblings('.side_box, .middle_box').css("background-color", color);
+        $(this).siblings('.side_box, .middle_box').css("background-color", random_color());
       })
       $('.middle_box').click(function(event){
         event.stopPropagation();
         var color = random_color();
-        $(this).parent('#large_box').css("background-color", color);
+        $(this).parent('#large_box').css("background-color", color);//function return value as variable
       });
     });
     </script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Card</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("#right").append("<div id='card'><p>" + $("#first").val() + " " + $("#last").val() +"</p><p id='back'>" + $("#desc").val() + "</p> <h3>Click for description!</h3></div>");//Appends dynamically created div 'card' to right side
+          $("#first").val(" ");
+          $("#last").val(" ");
+          $("#desc").val(" ");//Clears form fields, allowing to continue with new
+          return false;
+        })
+        $(document).on("click", "#card", function(){
+          $(this).children().siblings().toggle(); //Toggles the display property of #card. children is the <p>, siblings is the <h3>.
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="left">
+      <form>
+        <div class='info'>
+          <label for='first_name'>First Name: </label>
+          <input type ='text' placeholder='First Name' name="first_name" id='first'>
+      </div>
+      <div class='info'>
+        <label for='last_name'>Last Name: </label>
+        <input type ='text' placeholder='Last Name' name="last_name" id='last'>
+      </div>
+      <div class='info'>
+        <label for='description'>Description: </label>
+        <input type='textarea' name='description' rows="10" col="30" placeholder='Description' id='desc'>
+      </div>
+        <button>Add User</button>
+      </form>
+    </div>
+    <div id="right">
+    </div>
+  </body>
+</html>
